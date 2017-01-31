@@ -1,5 +1,6 @@
 import random
 import math
+import statistics as st
 
 L1 = []
 L2 = []
@@ -12,4 +13,5 @@ for i in range(0, 500):
 	L3.append(10 * min(L1))
 	L1 = []
 	print(str(L2[i]) + ":" + str(L3[i]))
-
+print(st.mean(L3))
+print(st.stdev(L3))
